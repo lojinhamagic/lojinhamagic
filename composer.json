@@ -1,19 +1,19 @@
 {
-    "name": "lojinhamagic/ecommerce",
+    "name": "Lojinhamagic/lojinhamagic",
     "authors": [
         {
-            "name": "Lojinha Magic",
+            "name": "Lojinha Magic -Lojinhamagic",
             "email": "lojinhamagic@gmail.com"
         }
     ],
     "require": {
-    	"phpmailer/phpmailer":"5.2.22",
-    	"slim/slim":"2.0",
-    	"rain/raintpl":"3.0.0"
+    	"phpmailer/phpmailer":"5.*",
+    	"slim/slim":"2.*",
+    	"rain/raintpl":"3.*"
     },
     "autoload": {
         "psr-4": {
-            "lojinhamagic": "vendor\\lojinhamagic\\php-classes\\src"
+            "lojinhamagic\\": "vendor\\lojinhamagic\\php-classes\\src"
         }
     }
 }

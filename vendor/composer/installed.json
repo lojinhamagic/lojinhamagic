@@ -1,30 +1,47 @@
 [
     {
         "name": "phpmailer/phpmailer",
-        "version": "v5.2.22",
-        "version_normalized": "5.2.22.0",
+        "version": "v5.2.26",
+        "version_normalized": "5.2.26.0",
         "source": {
             "type": "git",
             "url": "https://github.com/PHPMailer/PHPMailer.git",
-            "reference": "b18cb98131bd83103ccb26a888fdfe3177b8a663"
+            "reference": "70362997bda4376378be7d92d81e2200550923f7"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/b18cb98131bd83103ccb26a888fdfe3177b8a663",
-            "reference": "b18cb98131bd83103ccb26a888fdfe3177b8a663",
+            "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/70362997bda4376378be7d92d81e2200550923f7",
+            "reference": "70362997bda4376378be7d92d81e2200550923f7",
             "shasum": ""
         },
         "require": {
+            "ext-ctype": "*",
             "php": ">=5.0.0"
         },
         "require-dev": {
-            "phpdocumentor/phpdocumentor": "*",
-            "phpunit/phpunit": "4.7.*"
+            "doctrine/annotations": "1.2.*",
+            "jms/serializer": "0.16.*",
+            "phpdocumentor/phpdocumentor": "2.*",
+            "phpunit/phpunit": "4.8.*",
+            "symfony/debug": "2.8.*",
+            "symfony/filesystem": "2.8.*",
+            "symfony/translation": "2.8.*",
+            "symfony/yaml": "2.8.*",
+            "zendframework/zend-cache": "2.5.1",
+            "zendframework/zend-config": "2.5.1",
+            "zendframework/zend-eventmanager": "2.5.1",
+            "zendframework/zend-filter": "2.5.1",
+            "zendframework/zend-i18n": "2.5.1",
+            "zendframework/zend-json": "2.5.1",
+            "zendframework/zend-math": "2.5.1",
+            "zendframework/zend-serializer": "2.5.*",
+            "zendframework/zend-servicemanager": "2.5.*",
+            "zendframework/zend-stdlib": "2.5.1"
         },
         "suggest": {
             "league/oauth2-google": "Needed for Google XOAUTH2 authentication"
         },
-        "time": "2017-01-09T09:33:47+00:00",
+        "time": "2017-11-04T09:26:05+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -63,20 +80,23 @@
     },
     {
         "name": "rain/raintpl",
-        "version": "3.0.0",
-        "version_normalized": "3.0.0.0",
+        "version": "3.1.0",
+        "version_normalized": "3.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/rainphp/raintpl3.git",
-            "reference": "5bfdf4602b8adb0e80b222fa29ac559aa9c06abf"
+            "reference": "5fc655b59cb3d541755116a09fc4c0206b301923"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/rainphp/raintpl3/zipball/5bfdf4602b8adb0e80b222fa29ac559aa9c06abf",
-            "reference": "5bfdf4602b8adb0e80b222fa29ac559aa9c06abf",
+            "url": "https://api.github.com/repos/rainphp/raintpl3/zipball/5fc655b59cb3d541755116a09fc4c0206b301923",
+            "reference": "5fc655b59cb3d541755116a09fc4c0206b301923",
             "shasum": ""
         },
-        "time": "2012-12-24T05:24:32+00:00",
+        "require": {
+            "php": ">=5.3"
+        },
+        "time": "2013-11-10T18:36:47+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -85,34 +105,45 @@
             }
         },
         "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
         "authors": [
             {
                 "name": "Federico Ulfo",
                 "email": "rainelemental@gmail.com",
                 "homepage": "http://github.com/rainphp"
+            },
+            {
+                "name": "Rain Community"
             }
         ],
-        "description": "easy and fast template engine"
+        "description": "easy and fast template engine",
+        "homepage": "http://raintpl.com"
     },
     {
         "name": "slim/slim",
-        "version": "2.0.0",
-        "version_normalized": "2.0.0.0",
+        "version": "2.6.3",
+        "version_normalized": "2.6.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/slimphp/Slim.git",
-            "reference": "3e95c9abbc57a8f023ab4dacebcab9dae4d9f1f0"
+            "reference": "9224ed81ac1c412881e8d762755e3d76ebf580c0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/slimphp/Slim/zipball/3e95c9abbc57a8f023ab4dacebcab9dae4d9f1f0",
-            "reference": "3e95c9abbc57a8f023ab4dacebcab9dae4d9f1f0",
+            "url": "https://api.github.com/repos/slimphp/Slim/zipball/9224ed81ac1c412881e8d762755e3d76ebf580c0",
+            "reference": "9224ed81ac1c412881e8d762755e3d76ebf580c0",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2012-09-09T14:54:09+00:00",
+        "suggest": {
+            "ext-mcrypt": "Required for HTTP cookie encryption",
+            "phpseclib/mcrypt_compat": "Polyfil for mcrypt extension"
+        },
+        "time": "2017-01-07T12:21:41+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
